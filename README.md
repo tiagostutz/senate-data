@@ -18,9 +18,13 @@ services:
       - senate-output:/notebook/output
 ```
 
+* under the **notebooks** folder, create a subfolder named **output**
+
 * Run ```docker-compose up```
 
-* Open http://localhost:8888/
+* On another terminal run `docker-compose exec senate-data jupyter notebook list`. It will show a URL like `http://0.0.0.0:8888/?token=5a16349cad2b6f8f438f51cf3c488a1bfb3f5216a27ede9c :: /notebooks`. Take note of this token because you will need it in the next step
+
+* Open http://localhost:8888/ and It will ask for a token. Provide the one you copied from the previous step.
 
 ## Data downloads
 
