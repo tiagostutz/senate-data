@@ -1,4 +1,4 @@
-# senate-data
+# Senate Data
 Brazilian Senate OpenData downloader utilities
 
 ## Usage
